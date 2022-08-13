@@ -63,10 +63,6 @@ function Body({ chooseTrack, spotifyApi }) {
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [accessToken]);
-
-  console.log(spotifyApi);
-  console.log(process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID);
-  console.log(searchResults);
   return (
     <section className='bg-black ml-24 py-4 space-y-8 md:max-w-6xl flex-grow md:mr-2.5'>
       <Search search={search} setSearch={setSearch} />
